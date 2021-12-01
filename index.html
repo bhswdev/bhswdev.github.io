@@ -1,131 +1,184 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BHS Website Development</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>BHS Web Development</title>
-	<link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+    <div class="maindiv">
 
-	<style>
-		@import url('https://fonts.googleapis.com/css?family=Quicksand');
+<div class="fixed-bg">
+<h1>Berkeley High Website Development</h1>
+</div>
+	    
+	    <style>
+		    @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
-	body {
-	    padding: 0px;
-	    margin: 0px;
-	}
-
-	.background {
-	  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/41/Sunflower_from_Silesia2.jpg");
-	  background-repeat: no-repeat;
-	  background-attachment: fixed;
-	  background-size: cover;
-	  width:100%;
-	  height:100%;
-	  color: #4659ff;
-	  text-align: center;
-	  margin: 0px;
-	  font-family: 'Quicksand', sans-serif;
-	}
-
-	.welcome {
-	  border-radius: .5em;
-	  background-image: url("darkblue.jpg");
-	  display: inline-block;
-	  padding: 5px;
-	  margin: 0px;
-	}
-
-	.name {
-	  border-radius: .5em;
-	  background-image: url("darkblue.jpg");
-	  display: inline-block;
-	  padding-left: 8px;
-	  padding-right: 8px;
-	  padding-top: 0px;
-	  padding-bottom: 0px;
-	  margin: 0px;
-	}
-
-	.dystopia {
-	  border-radius: .5em;
-	  background-image: url("darkblue.jpg");
-	  display: inline-block;
-	  padding: 15px;
-	  margin: 0px;
-}
-		
-		.navbar{
-		  background-image: url("darkblue.jpg");
-		  text-align: center;
-		  padding: 10px;
-		  margin-top: 0px;
-		  color: #4659ff;
-		  font-family: 'Quicksand', sans-serif;
-		}
-
-a:visited {
-  color: #b0a8f0;
+* {
+  border: 0vh;
+  margin: 0vh;
 }
 
-	nav a{
-	  text-decoration: none;
-	}
+@media only screen and (min-width: 501px) {
 
-	nav a:link{
-	  color: #4659ff;
-	}
+  html,body {
+    height: 100vh;
+  }
 
-	nav a:visited{
-	  color: #4659ff;
-	}
+  .maindiv {
+    height: 100%;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+  }
 
-	nav a:hover{
-	  color: #b0a8f0;
-	}
+  .fixed-bg {
+    background-image: url('background.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: table;
+  }
 
-	nav a:active{
-	  color: #b0a8f0;
-	}
+  .fixed-bg h1 {
+    display: table-cell;
+    vertical-align: middle;
+  }
 
-	#home, #admin, #previousPurchases, #cart, #dystopia, #signout {
-	  padding: 20px;
-	}
-		
-</style>
-	
-</head>
+  .scroll-bg {
+    background-color: rgb(41, 37, 37);
+    padding: 10px 70px;
+    color: rgb(117, 106, 106);
+  }
 
-<body>
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
-	<script src="script.js">
+@media only screen and (max-width: 500px) {
+  html,body {
+    height: 100vh;
+  }
 
-	</script>
+  .maindiv {
+    height: 100vh;
+    width: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+  }
 
-	<div class="maindiv">
+  .fixed-bg {
+    background-image: url('phonebg.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vh;
+    color: white;
+    text-align: center;
+    display: table;
+  }
 
-		<div class="welcome">
-			<h1><b>BHS Web Development Club</b></h1>
-		</div>
+  .fixed-bg h1 {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .scroll-bg {
+    background-color: rgb(41, 37, 37);
+    padding: 10px 70px;
+    color: rgb(117, 106, 106);
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+	    </style>
+
+<div class="scroll-bg">
+
+<br>
+
+    <h4>Web development is the work involved in developing a website for the Internet (World Wide Web). Our team uses HTML, CSS, and JavaScript to procure high quality organization websites.</h4>
+  
+    <br>
+
+  </div>
+
+  <div class="fixed-bg">
+<h1>Request a Website</h1>
+</div>
+
+<div class="scroll-bg">
+
+<br>
+
+    <h4>The web development team at Berkeley High aims to provide BHS clubs and organizations with a resource for website design. Fill out the form below of your organization is interested in a free, student developed website.
+
+      <br>
+      <br>
+
+       <div class="center">
+      <input type="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfngIxWJsT4rDThj70KREZvmoCcZjxsYCM-KjhyKOyDRxGuJQ/viewform';" value="Request a website" />
+      </div>
+
+    </br>
+
+  </div>
+
+  <div class="fixed-bg"><h1>Join the team!</h1></div>
+
+  <div class="scroll-bg">
+
+<br>
+    <h4>Whether you're fluent in web design and want to join the club site development team, or learn HTML from scratch, there's a place in web dev for you! We  believe that as programmers, it's our obligation to make the world a better place--without people to help, our code means nothing. 
+      <br>
+      <br>
+      <div class="center">
+      <input type="button" onclick="location.href='https://forms.gle/1N7m33FxBBSP5tLM8';" value="Sign up!" />
+      </div>
+<br>
+</div>
+
+<div class="fixed-bg"><h1>Contacts</h1></div>
+
+  <div class="scroll-bg">
+
+      <br>
+
+    Club President: Maya Cobb (mayacobb@students.berkeley.net)
+    <br>
+    VP: Clara Elm Nettesheim (claraceceliaelmnettesheim@students.berkeley.net)
+    <br>
+    Media: Gursimar Kaur (gursimarkaur@students.berkeley.net)
+    <br>
+    Club Sponsor: Dirk Wright (dirkwright@berkeley.net)
+    </h4>
+<br><br><br>
+<div class="center">
+    <input type="button" onclick="location.href='index.html';" value="Back to top" />
+    </div>
+
+<br>
+</div>
+
+</div>
 
       
-      <div class="scroll-bg">
-	      <h3>Meetings Fridays at lunch in G107. Site is undergoing maintentance. Hang tight, and keep coding!</h3>
-      </div>
-
-      <div class="fixed-bg bg-3">
-        <h1>Sign up!</h1>
-		</div>
-		
-		<div class="scroll-bg">
-			<div class = "center">
-        
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSesMtLSh0KEpLDEKfDGqivrPaj6SeeZn6EJbq6G-4zMltNI5g/viewform?embedded=true" width="640" height="1040" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-	      
-			</div>
-
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
