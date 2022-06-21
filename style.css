@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+* {
+  border: 0vh;
+  margin: 0vh;
+}
+
+@media only screen and (min-width: 501px) {
+
+  html,body {
+    height: 100vh;
+  }
+
+  .maindiv {
+    height: 100%;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+  }
+
+  .fixed-bg {
+    background-image: url('background.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: table;
+  }
+
+  .fixed-bg h1 {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .scroll-bg {
+    background-color: rgb(41, 37, 37);
+    padding: 10px 70px;
+    color: rgb(117, 106, 106);
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html,body {
+    height: 100vh;
+  }
+
+  .maindiv {
+    height: 100vh;
+    width: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+  }
+
+  .fixed-bg {
+    background-image: url('phonebg.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vh;
+    color: white;
+    text-align: center;
+    display: table;
+  }
+
+  .fixed-bg h1 {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .scroll-bg {
+    background-color: rgb(41, 37, 37);
+    padding: 10px 70px;
+    color: rgb(117, 106, 106);
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
